@@ -1,0 +1,18 @@
+<svg id="root" class="on">
+   <defs>
+    <symbol id="bg">
+      <rect id="background" x="0" y="0" width="100%" height="100%" pointer-events="all">
+       <animate attributeName="fill" begin="enable" from="#000000" to="#ffffff" dur="0.1" final="keep" />
+       <animate attributeName="fill" begin="disable" from="#ffffff" to="#000000" dur="0.1" final="keep" />
+    </rect>
+    </symbol>
+  </defs>
+  
+    <svg width="100%" height="100%">
+      <use id="animated_bg" href="#bg" width="100%" height="100%" />
+    </svg>
+    <section id="shape" x="50%-26" y="50%-62" >
+        <image class="light_off" width="53" height="123" href="off.png" x="0" y="0" pointer-events="none"/>
+        <image class="light_on" width="53" height="123" href="on.png" x="0" y="0" pointer-events="none"/>
+    </section>
+</svg>

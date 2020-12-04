@@ -1,0 +1,29 @@
+#root {
+  viewport-fill: black;
+}
+
+#background {
+  fill: black;
+}
+
+
+.flaslight{
+  fill:rgb(255,255,255)
+}
+
+#root.on .light_off{
+  display:none
+}
+
+#root.on .light_on{
+  display:inline;
+}
+
+
+.light_off{
+  display:inline
+}
+
+.light_on{
+  display:none;
+}

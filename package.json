@@ -1,0 +1,29 @@
+{
+  "fitbit": {
+    "appUUID": "34dea964-0d28-4baa-b75c-2c3cc4e61025",
+    "appType": "app",
+    "appDisplayName": "Lightest",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffc107",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Lightest"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "^5.0.1",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "scripts": {
+    "build": "./node_modules/@fitbit/sdk/bin/fitbit-build.js",
+    "start": " ./node_modules/@fitbit/sdk-cli/lib/cli.js",
+    "build-global": "fitbit-build"
+  }
+}
