@@ -1,4 +1,4 @@
-# Lightest,
+# Lightest
 ![image](res/lightest.png)  
 An app to have as torch for fitbit versa 3. Literally, is just that.  
 Avaliable in the [Fitbit Galery](https://gallery.fitbit.com/details/34dea964-0d28-4baa-b75c-2c3cc4e61025)
