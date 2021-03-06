@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+    - '12'
+before_install:
+    - sudo apt-get install -y libsecret-1-0
+install:
+    - npm install
+os:
+    - linux
+env:
+    - TARGET_ARCH=x64
+
+script:
+    - npm run build
+
+branches:
+    only:
+        - master
+        - /^v\d+\.\d+\.\d+.*$/
+
+deploy:
+    provider: releases
+    api_key: $TOKEN
+    file: 'build/app.fba'
+    skip_cleanup: true
+    on:
+        tags: true
